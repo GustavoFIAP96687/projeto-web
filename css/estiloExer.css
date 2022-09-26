@@ -1,0 +1,21 @@
+#div_2{
+    font-size: xx-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0 auto;
+    width: 650px;
+}
+
+.p_2{
+    color: red;
+    background-color: black;
+}
+
+#div_3{
+    font-size: 26px;
+    color: blue;
+    font-style: italic;
+}
+
+.p_3{
+    color: white;
+}

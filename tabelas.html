@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        .fundo_azul{
+            background-color: blue;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+
+        table{
+            border-collapse: collapse;
+            width: 30%;
+            margin: auto;
+            border: solid 1px;
+            
+        }
+
+        tfoot{
+            text-align: center;
+        }
+
+        .data{
+            text-align: center;
+        }
+
+        tbody > tr > td{
+            border-left: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr class="fundo_azul">
+                <td>Nome</td>
+                <td>valor</td>
+                <td class="data">data pagamento</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Gustavo</td>
+                <td>200,00</td>
+                <td class="data">22/09/2022</td>
+            </tr>
+            <tr>
+                <td>fulano 1</td>
+                <td>122,00</td>
+                <td class="data">21/09/2022</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">xxx</td>
+            </tr>
+        </tfoot>
+    
+    </table>
+
+        <table>
+            <thead>
+                <tr class="fundo_azul">
+                    <td>Nome</td>
+                    <td>valor</td>
+                    <td>data pagamento</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Gustavo</td>
+                    <td>200,00</td>
+                    <td>22/09/2022</td>
+                </tr>
+                <tr>
+                    <td>fulano 1</td>
+                    <td>122,00</td>
+                    <td>21/09/2022</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">xxx</td>
+                </tr>
+            </tfoot>
+        
+        </table>
+</body>
+</html>

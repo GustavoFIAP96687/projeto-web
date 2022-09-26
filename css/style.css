@@ -5,3 +5,19 @@ h2{
 h1{
     color: yellow;
 }
+
+/*criar um elemento de id com #*/
+#txtNome{
+        background-color: yellow;
+        color: red;
+}
+
+#txtLogin{
+
+}
+
+/*criar um elemento de formataçao por meio do CLASS*/
+.formatarCampoTexto{
+    background-color: yellow;
+    color: red;
+}
