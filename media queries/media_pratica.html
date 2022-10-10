@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            background-color: gray;
+        }
+
+        article{
+            height: 100px;
+            border: 1px solid black;
+        }
+
+        @media screen and (max-width: 480px){
+            .bloco_1, .bloco_2, .bloco_3, .bloco_4{
+                height: 100%;
+                width: 100%;
+                background-color: red;
+            }
+        }
+
+        @media screen and (min-width: 481px) and (max-width:768px){
+            .bloco_1, .bloco_2, .bloco_3, .bloco_4{
+                height: 100%;
+                box-sizing: border-box;
+                float: left;
+                width: 50%;
+                background-color: yellow;
+            }
+        }
+
+        @media screen and (min-width: 769px) and (max-width: 1279px){
+            .bloco_1, .bloco_2, .bloco_3{
+                height: 100%;
+                box-sizing: border-box;
+                float: left;
+                width: 33.33%;
+                background-color: green;
+            }
+            .bloco_4{
+                clear: both;
+                width: 100%;
+            }
+        }
+
+        @media screen and (min-width: 1280px){
+            .bloco_1, .bloco_2, .bloco_3, .bloco_4{
+                height: 100%;
+                box-sizing: border-box;
+                width: 25%;
+                background-color: blue;
+                float: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <article class="bloco_1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, veniam libero saepe nulla illum laudantium minus accusamus incidunt nostrum, nemo consequuntur impedit consequatur minima ducimus possimus beatae veritatis ipsa eum. Velit recusandae exercitationem voluptatem impedit ipsa nobis, vel tenetur officia itaque maiores ipsam. Quisquam numquam accusantium in iste laudantium, illum blanditiis autem debitis corrupti amet unde natus officia nesciunt cumque tempore quod ipsa beatae expedita nemo quos praesentium iusto voluptates? Incidunt amet officiis enim nulla ex, suscipit provident magnam asperiores aut inventore nisi. Hic reiciendis excepturi quas consequuntur, beatae, eius cupiditate cum magnam perspiciatis quae debitis ea soluta. Praesentium, placeat!
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ipsa repellat vitae magnam, minima adipisci quas necessitatibus aspernatur blanditiis in, illum omnis dignissimos fugit accusamus provident unde reprehenderit id, accusantium perferendis deserunt. Corporis harum veritatis voluptatum sunt cum? Dolor incidunt earum provident nesciunt aperiam asperiores veritatis dignissimos eius? Possimus quasi qui nesciunt et? Deserunt non odit nesciunt quae quasi velit magnam ex eveniet saepe tenetur dolorum, quam et dolore aut tempore. Voluptatem iste hic sit, nemo corporis, quis voluptatibus animi nobis ad, quidem rem sed aut dolor corrupti neque autem! Vel, nesciunt! Atque sunt quasi suscipit, fuga doloribus accusantium odit!
+        </article>
+        <article class="bloco_2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ipsa repellat vitae magnam, minima adipisci quas necessitatibus aspernatur blanditiis in, illum omnis dignissimos fugit accusamus provident unde reprehenderit id, accusantium perferendis deserunt. Corporis harum veritatis voluptatum sunt cum? Dolor incidunt earum provident nesciunt aperiam asperiores veritatis dignissimos eius? Possimus quasi qui nesciunt et? Deserunt non odit nesciunt quae quasi velit magnam ex eveniet saepe tenetur dolorum, quam et dolore aut tempore. Voluptatem iste hic sit, nemo corporis, quis voluptatibus animi nobis ad, quidem rem sed aut dolor corrupti neque autem! Vel, nesciunt! Atque sunt quasi suscipit, fuga doloribus accusantium odit!</article>
+        <article class="bloco_3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ipsa repellat vitae magnam, minima adipisci quas necessitatibus aspernatur blanditiis in, illum omnis dignissimos fugit accusamus provident unde reprehenderit id, accusantium perferendis deserunt. Corporis harum veritatis voluptatum sunt cum? Dolor incidunt earum provident nesciunt aperiam asperiores veritatis dignissimos eius? Possimus quasi qui nesciunt et? Deserunt non odit nesciunt quae quasi velit magnam ex eveniet saepe tenetur dolorum, quam et dolore aut tempore. Voluptatem iste hic sit, nemo corporis, quis voluptatibus animi nobis ad, quidem rem sed aut dolor corrupti neque autem! Vel, nesciunt! Atque sunt quasi suscipit, fuga doloribus accusantium odit!</article>
+        <article class="bloco_4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ipsa repellat vitae magnam, minima adipisci quas necessitatibus aspernatur blanditiis in, illum omnis dignissimos fugit accusamus provident unde reprehenderit id, accusantium perferendis deserunt. Corporis harum veritatis voluptatum sunt cum? Dolor incidunt earum provident nesciunt aperiam asperiores veritatis dignissimos eius? Possimus quasi qui nesciunt et? Deserunt non odit nesciunt quae quasi velit magnam ex eveniet saepe tenetur dolorum, quam et dolore aut tempore. Voluptatem iste hic sit, nemo corporis, quis voluptatibus animi nobis ad, quidem rem sed aut dolor corrupti neque autem! Vel, nesciunt! Atque sunt quasi suscipit, fuga doloribus accusantium odit!</article>
+    </section>
+</body>
+</html>
