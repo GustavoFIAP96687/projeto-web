@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var lang = [];
+
+        function addColor(){
+            let txtCor = document.getElementById('idCor');
+
+            if(valida()){
+                alert("faz ai");
+            }
+            else{
+                lang.push(txtCor.value);
+                console.log(lang);
+                txtCor.value = "";
+                listarLang();
+            }
+            document.getElementById('idCor').focus();
+        }
+
+        function listarLang(){
+            let valor;
+            for( let ind=0; ind<lang.length; ind++){
+                valor+=lang[ind]+"<br/>"; 
+            }
+            document.getElementById('divLang').innerHTML = valor;
+        }
+
+        function valida(){
+            let validar = false
+            if(document.getElementById('idCor').value == "")
+                validar = true
+
+            return validar;
+        }
+
+        function delColor(){
+            let txtCor = document.getElementById('idCor');
+            for( let ind=0; ind<lang.length; ind++){
+                if(txtCor.value == lang[ind]){
+                    lang.splice(ind, 1)
+                    break
+                }
+                 
+        }
+        listarLang();
+        }
+    </script>
+</head>
+<body>
+    <label for="idCor">Cor:</label>
+    <input type="text" id="idCor" size="25px"><br>
+    <button id="btnAdicionarCor" onclick="addColor()">Add cor</button>
+    <div id="divLang"></div>
+
+    <label for="idCor">Remover cor:</label>
+    <input type="text" id="idRemoverCor" size="25px"><br>
+    <button id="btnRemoverCor" onclick="delColor()">Del cor</button>
+</body>
+</html>

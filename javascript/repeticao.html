@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="exibaVetor"></div>
+    <div id="exibaValor"></div>
+</body>
+<script>
+
+    const langs = ["JS", "java", "PY", "c#"]
+    console.log(`Valor: ${langs[0]}`);
+    /*document.getElementById("exibaVetor").innerHTML += `Valor: ${langs[0]}<br/>`
+    document.getElementById("exibaVetor").innerHTML += `Valor: ${langs[1]}<br/>`
+    document.getElementById("exibaVetor").innerHTML += `Valor: ${langs[2]}<br/>`
+    document.getElementById("exibaVetor").innerHTML += `Valor: ${langs[3]}<br/>`
+    document.getElementById("exibaVetor").innerHTML += `Valor: ${langs[4]}<br/>`*/
+    langs[4] = "PHP"
+    /*document.getElementById("exibaVetor").innerHTML += `Valor: ${langs[4]}<br/>`
+    document.getElementById("exibaVetor").innerHTML += `Valor: ${langs[5]}<br/>`
+    document.getElementById("exibaVetor").innerHTML += `Valor: ${langs[6]}<br/>`
+    document.getElementById("exibaVetor").innerHTML += `Valor: ${langs[7]}<br/>`
+    document.getElementById("exibaVetor").innerHTML += `Valor: ${langs[8]}<br/>`
+    document.getElementById("exibaVetor").innerHTML += `Valor: ${langs[9]}<br/>`*/
+    langs[10] = "asp.net"
+    langs[11] = "coldfusion"
+    //document.getElementById("exibaVetor").innerHTML += `Valor: ${langs[10]}<br/>`
+
+    for(let i=0; i<langs.length; i++){
+        document.getElementById("exibaVetor").innerHTML += `Valor: ${langs[i]}<br/>`
+    }
+
+    
+
+    //for
+    const objDiv =  document.getElementById('exibaValor')
+    for(let ind=0; ind<5; ind++){
+        console.log("valor",ind)
+        objDiv.innerHTML = objDiv.innerHTML + "for: " + ind + '<br/>';
+    }
+
+    //while
+    let valor = 0
+    //objDiv.innerHTML = ""
+    while(valor<5){
+        console.log("valor",valor)
+        objDiv.innerHTML = objDiv.innerHTML + "while: " + valor + '<br/>';
+        valor++
+    }
+
+    valor = 10
+    do{
+        console.log("valor",valor)
+        objDiv.innerHTML = objDiv.innerHTML + "do while: " + valor + '<br/>';
+        valor++
+    }while(valor<5)
+</script>
+</html>
